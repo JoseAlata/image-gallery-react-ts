@@ -1,8 +1,8 @@
-# Proyecto Nombre
+# Image Gallery
 
 ## Descripción
 
-Una breve descripción del proyecto, su propósito y las tecnologías utilizadas.
+Esta aplicación permite a los usuarios explorar, buscar y descargar imágenes de alta calidad directamente desde Unsplash. Con una interfaz intuitiva y responsive, los usuarios pueden buscar imágenes en tiempo real, navegar a través de miles de fotos utilizando la paginación, y descargar sus favoritas con un solo clic. La aplicación también cuenta con funcionalidades interactivas, como mostrar el nombre y autor de la imagen al pasar el cursor sobre ella.
 
 ## Tabla de Contenidos
 
