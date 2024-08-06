@@ -1,30 +1,89 @@
-# React + TypeScript + Vite
+# Proyecto Nombre
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Una breve descripción del proyecto, su propósito y las tecnologías utilizadas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tabla de Contenidos
 
-## Expanding the ESLint configuration
+- [Instalación](#instalación)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Configuración del Unsplash API Key](#configuración-del-unsplash-api-key)
+- [Uso](#uso)
+- [Características](#características)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalación
 
-- Configure the top-level `parserOptions` property like this:
+Instrucciones paso a paso sobre cómo instalar y configurar el proyecto localmente.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+# Clonar el repositorio
+git clone https://github.com/JoseAlata/image-gallery-react-ts
+
+# Navegar al directorio del proyecto
+cd image-gallery-react-ts
+
+# Instalar dependencias
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Tecnologías Utilizadas
+
+En este proyecto se han utilizado las siguientes tecnologías:
+
+- **React**
+- **TypeScript**
+- **Vite**
+- **Unsplash API**
+- **CSS**
+
+## Configuración del Unsplash API Key
+
+Para poder utilizar la API de Unsplash, necesitas obtener un `client_id`. Sigue estos pasos para obtenerlo y configurarlo en tu proyecto:
+
+1. **Crear una cuenta en Unsplash:**
+
+   - Si no tienes una cuenta, regístrate en [Unsplash](https://unsplash.com/join).
+
+2. **Registrar una nueva aplicación:**
+
+   - Una vez hayas iniciado sesión, ve a la sección [Unsplash Developers](https://unsplash.com/developers).
+   - Haz clic en "Your Apps" y luego en "New Application".
+   - Completa los detalles necesarios para tu aplicación y envía el formulario.
+   - Después de crear la aplicación, obtendrás un `Access Key` y un `Secret Key`.
+
+3. **Configurar el `client_id` en tu proyecto:**
+   - Crea un archivo `.env` apartir de `.env.template` en la raíz.
+   - reemplaza `YourAPIKeyHere` con tu `Access Key` de Unsplash.
+
+```env
+VITE_API_ID=YourAPIKeyHere
+```
+
+## Uso
+
+Para usar el proyecto basta con colocar el siguiente comando
+
+```bash
+npm run dev
+```
+
+## Características
+
+- **Visualización de Imágenes**:
+
+  - La aplicación permite ver imágenes de alta calidad directamente desde Unsplash.
+  - Las imágenes se muestran en una galería atractiva y responsive.
+
+- **Descarga de Imágenes**:
+
+  - Puedes descargar las imágenes que te gusten con un solo clic.
+  - Las imágenes se descargan en su máxima resolución disponible.
+
+- **Búsqueda de Imágenes**:
+
+  - La aplicación cuenta con una funcionalidad de búsqueda para encontrar imágenes basadas en tus intereses.
+  - Los resultados de búsqueda se actualizan en tiempo real mientras escribes.
+
+- **Paginación**:
+  - Navega fácilmente a través de miles de imágenes utilizando un sistema de paginación intuitivo.
